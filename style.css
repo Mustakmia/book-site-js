@@ -1,0 +1,22 @@
+/* custom css  */
+
+#img-bg {
+    background-image: url("bg.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.displayHeight {
+    min-height: 20.9vh;
+    width: 100%;
+}
+
+.spin {
+    position: absolute;
+    top: 68%;
+    left: 40%;
+    display: none;
+}
