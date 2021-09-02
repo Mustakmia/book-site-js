@@ -23,15 +23,17 @@ const searchBooks = () => {
 
 //----- card display function start ----
 
-const displayResult = allData => {
-        document.getElementById('search-item').innerText = `${allData.length} search result founds`
+const displayResult = resultData => {
+        document.getElementById('search-item').innerText = `${resultData.length} search result founds`
+
         const cardContainer = document.getElementById('cardContainer');
+
         cardContainer.textContent = '';
-        if (allData.length === 0) {
+        if (resultData.length === 0) {
             document.getElementById('search-item').innerText = `Invalid Search`;
         } else {
             // for each loop start
-            allData.forEach(data => {
+            resultData.forEach(data => {
                 // creating card div start
                 const div = document.createElement('div');
                 div.classList.add('col-md-4');
@@ -47,6 +49,7 @@ const displayResult = allData => {
                     // creating card div end
                 cardContainer.appendChild(div);
             });
+
             // for each loop end
 
         }

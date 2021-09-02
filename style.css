@@ -9,6 +9,10 @@
     background-size: cover;
 }
 
+#spinner {
+    display: none;
+}
+
 .displayHeight {
     min-height: 20.9vh;
     width: 100%;
